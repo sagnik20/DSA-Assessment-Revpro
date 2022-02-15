@@ -18,7 +18,7 @@ public class Main
 
         int counts=0,countq=0;
 
-        for(int i=0;i
+        for(int i=0;i<S.length();i++){
             char c= S.charAt(i);
 
             if(c=='*')
