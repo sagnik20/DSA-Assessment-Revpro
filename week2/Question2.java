@@ -2,12 +2,8 @@ import java.util.*;
 import java.io.*;
 import java.lang.Math;
 
-public class Main
-{
-  public static int setPassword(int N,int[] A)
-  {
-
-    //this is default OUTPUT. You can change it.
+public class Main{
+  public static int setPassword(int N,int[] A){
     int result = -404;
     String  x="",y="";
     Stack a = new Stack();
@@ -43,22 +39,16 @@ public class Main
 
       return result;
   }
-  public static void main (String[]args)
-  {
+  public static void main (String[]args){
     Scanner sc = new Scanner (System.in);
-
-    //INPUT [uncomment & modify if required]
     int N = sc.nextInt ();
 
     int[] A = new int[N];
-    for (int i = 0; i < N; i++)
-    {
+    for (int i = 0; i < N; i++){
         A[i] = sc.nextInt();
     }
     
     sc.close ();
-
-    //OUTPUT [uncomment & modify if required]
     setPassword(N,A);
   }
 }
